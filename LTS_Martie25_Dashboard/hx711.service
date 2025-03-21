@@ -3,11 +3,11 @@ Description=LTS Martie25 Dashboard Autostart Script
 After=network.target
 
 [Service]
-ExecStart=/home/pi/LTS_Martie25_Dashboard/venv/bin/python /home/pi/LTS_Martie25_Dashboard/hx711_full.py
-WorkingDirectory=/home/pi/LTS_Martie25_Dashboard
+ExecStart=/home/bogdan/LTS_Martie25_Dashboard/venv/bin/python /home/bogdan/LTS_Martie25_Dashboard/hx711_full.py
+WorkingDirectory=/home/bogdan/LTS_Martie25_Dashboard
 StandardOutput=inherit
 StandardError=inherit
-User=pi
+User=bogdan
 Restart=on-failure
 
 [Install]
