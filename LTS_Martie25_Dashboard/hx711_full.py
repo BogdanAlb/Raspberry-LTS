@@ -109,11 +109,11 @@ def measurement_loop():
                 if recording:
                     writer.writerow([timestamp, round(val, 2)])
                     file.flush()
-                    print(f"[{timestamp}] {val:.2f} g")
+                    print(f"[{timestamp}] {val:.3f} g")
                 time.sleep(1)
             except Exception as e:
                 print("Eroare:", e)
-                time.sleep(1)
+                time.sleep(0.5)
 
 # ==================== RUTE PROTEJATE ====================
 @app.route("/")
