@@ -18,5 +18,5 @@ chmod +x setup_complet_lts.sh
 
 Apoi accesează interfața web:
 ```
-http://<IP_RaspberryPi>:5000
+http://192.168.0.137:5000
 ```
